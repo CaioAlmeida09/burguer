@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import AppHome from './Containers/CreatePedido/index';
+import globalStyles from './globalStyles'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <> <App /> <GlobalStyles/>  </> 
+  <> <AppHome /> <globalStyles/>  </> 
 );
