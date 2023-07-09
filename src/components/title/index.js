@@ -1,9 +1,9 @@
 import React from "react"
 import {Title} from "./style"
 
-function MyTitle(){
+function MyTitle({children}){
 
-return( <Title> Pedidos </Title>)
+return( <Title> {children} </Title>)
 }
 
 export default MyTitle

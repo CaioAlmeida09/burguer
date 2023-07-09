@@ -23,7 +23,7 @@ img{
 export const Label = styled.label`
 font-size: 10px;
 `
-export const Input = styled.input`
+export const DivPedido = styled.div`
 display: flex;
 margin: 10px auto;
 width: 272px;
@@ -31,4 +31,9 @@ height: 63px;
 box-shadow: 0px 4px 4px 0px ;
 background: #A9A9A9;
 padding:20px;
+#Trash{
+width: 26px;
+height: 28px;
+
+}
 `

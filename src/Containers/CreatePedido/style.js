@@ -21,7 +21,9 @@ img{
 }
 `
 export const Label = styled.label`
-font-size: 10px;
+font-size: 17px;
+font-weight: 10px;
+color: #ffffff;
 `
 export const Input = styled.input`
 display: flex;
@@ -31,18 +33,4 @@ height: 45px;
 box-shadow: 0px 4px 4px 0px ;
 background: #A9A9A9;
 padding: 12px;
-`
-export const Button = styled.button`
-width: 202px;
-height: 48px;
-margin-top: 35px;
-background: rgba(217, 56, 86, 1);
-color: #ffffff;
-border-radius: 10px;
-cursor: pointer;
-font-size: 15px;
-font-weight: 8px;
-
-
-
 `
