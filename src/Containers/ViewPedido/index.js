@@ -18,10 +18,9 @@ return(
         <DivPedido>
             <ul>
 <p id="Pedido"> 'Pedido'</p>
-<img id= "Trash" src={Lixo}/>
-<p id="Cliente"> 'Cliente'</p>
-
+<p  id="Cliente"> 'Cliente'</p>
             </ul>
+<img id= "Trash" src={Lixo}/>
         </DivPedido>
        
         <Button onClick={BackCreate}> voltar </Button>
