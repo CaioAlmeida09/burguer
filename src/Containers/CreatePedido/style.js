@@ -34,3 +34,13 @@ box-shadow: 0px 4px 4px 0px ;
 background: #A9A9A9;
 padding: 12px;
 `
+export const ButtonPedido = styled.button`
+width: 70px;
+height: 28px;
+color: #455345;
+border: 10px;
+margin-top: 10px;
+cursor: pointer;
+
+
+`

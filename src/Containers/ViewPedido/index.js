@@ -5,16 +5,19 @@ import Button from '../../components/button/index'
 import Title from '../../components/title/index'
 import { useNavigate } from "react-router-dom";
 import Lixo from "../../assets/Lixo.svg.svg"
+import pedido from "../CreatePedido/index"
+
 
 function AppView(){
     const Navigate = useNavigate();
+    
     function BackCreate(){  
         Navigate("/")}
       
 return(
     <Background>
         <img src={ImgPedido}/>
-        <Title> Pedidos </Title>
+        <Title> {pedido} </Title>
         <DivPedido>
             <ul>
 <p id="Pedido"> 'Pedido'</p>
