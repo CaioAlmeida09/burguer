@@ -1,17 +1,16 @@
 import React from "react"
-import {Background, DivPedido} from "../ViewPedido/style"
+import {Background, Lista} from "../ViewPedido/style"
 import ImgPedido from '../../assets/img-saco.png'
 import Button from '../../components/button/index'
 import Title from '../../components/title/index'
 import { useNavigate } from "react-router-dom";
-import Lixo from "../../assets/Lixo.svg.svg"
-import Pedido from "../CreatePedido/index"
-import Cliente from "../CreatePedido/index"
+import Lixo from "../../assets/Lixo.svg.svg";
+
 
 
 function AppView(){
     const Navigate = useNavigate();
-    
+    const pedidos = [{pedido: "hamburguer", cliente:"Caio"} , {pedido: "batata", cliente:"Lele"}]
     function BackCreate(){  
         Navigate("/")}
       
@@ -19,15 +18,20 @@ return(
     <Background>
         <img src={ImgPedido}/>
         <Title>Pedido</Title>
-        <DivPedido>
-            <ul>
-<p id="Pedido"> {Pedido}</p>
-<p  id="Cliente"> {Cliente}</p>
+                    <ul>
+                {pedidos.map(user =>{
+                    return(
+                    <Lista key={user.id}>
+                        <div id ="paragrafos">
+                    <p id="Pedido">{user.pedido}</p>
+                    <p id="Cliente">{user.cliente}</p>
+                    </div>
+                    <button> <img id= "Trash" src={Lixo}/> </button>
+                    </Lista>)
+                })                
+                }
             </ul>
-<img id= "Trash" src={Lixo}/>
-        </DivPedido>
-       
-        <Button onClick={BackCreate}> voltar </Button>
+<Button onClick={BackCreate}> voltar </Button>
         
     </Background>
 )

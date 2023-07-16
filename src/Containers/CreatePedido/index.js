@@ -6,6 +6,9 @@ import Title from "../../components/title/index";
 import Button from "../../components/button";
 import {useState, useRef} from  "react"
 import axios from "axios"
+import Swal from 'sweetalert2'
+
+
 
 function AppHome(){
     const InputPedido = useRef()
@@ -15,10 +18,14 @@ function AppHome(){
     
 
    async function AddPedido(){
-      //setPedidos([...pedidos,
-    //{ id: Math.random()*10 , Pedido: InputPedido.current.value, Cliente:InputCliente.current.value}])}
-    const Data = await axios.post("http://localhost:3001/pedido", {name: InputCliente.current.value, mypedido:InputPedido.current.value})
-    }
+    const newPedido = await axios.post("http://localhost:3001/pedido", {name: InputCliente.current.value, mypedido:InputPedido.current.value})
+    ;
+    Swal.fire(
+        "Pedido realizado",
+        "bom trabalho"
+      )
+    setPedidos([...pedidos, newPedido.data])}
+
     function RouterView(){
         navigate("/View")}
     
@@ -37,4 +44,4 @@ return (
     </Background>
 )
 }
-export default AppHome
+export default AppHome;
