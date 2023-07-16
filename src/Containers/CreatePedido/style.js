@@ -35,11 +35,13 @@ background: #A9A9A9;
 padding: 12px;
 `
 export const ButtonPedido = styled.button`
-width: 70px;
-height: 28px;
-color: #455345;
+width:130px;
+height: 38px;
+color: #ffffff;
+background: #A06fF0;
 border: 10px;
-margin-top: 10px;
+margin-top: 20px;
+border-radius: 12px;
 cursor: pointer;
 
 

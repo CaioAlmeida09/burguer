@@ -5,21 +5,23 @@ import { useNavigate } from "react-router-dom";
 import Title from "../../components/title/index";
 import Button from "../../components/button";
 import {useState, useRef} from  "react"
+import axios from "axios"
 
 function AppHome(){
-    const navigate = useNavigate();
-    const [pedido, setPedido ] = useState()
     const InputPedido = useRef()
     const InputCliente = useRef()
+    const navigate = useNavigate();
+    const [pedidos, setPedidos] = useState([]);
+    
 
-
-    function AddPedido(){
-        console.log(InputPedido.current.value)
-        console.log(InputCliente.current.value)}
-        
-    function RouterView(){
-        navigate("/View")
+   async function AddPedido(){
+      //setPedidos([...pedidos,
+    //{ id: Math.random()*10 , Pedido: InputPedido.current.value, Cliente:InputCliente.current.value}])}
+    const Data = await axios.post("http://localhost:3001/pedido", {name: InputCliente.current.value, mypedido:InputPedido.current.value})
     }
+    function RouterView(){
+        navigate("/View")}
+    
 
 return (    
     <Background>
@@ -29,8 +31,8 @@ return (
         <Input ref={InputPedido}/>
         <Label > Nome do cliente:</Label>
         <Input ref={InputCliente}/>
-        <Button ButtonCreate = {true} onClick={RouterView}> cadastrar </Button>
-        <ButtonPedido onClick={AddPedido}> jjhsjj </ButtonPedido>
+        <Button onClick={AddPedido} > cadastrar </Button>
+        <ButtonPedido ButtonCreate = {true} onClick={RouterView}> Pedidos </ButtonPedido>
         
     </Background>
 )

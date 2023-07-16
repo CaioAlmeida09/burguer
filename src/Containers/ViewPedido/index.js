@@ -5,7 +5,8 @@ import Button from '../../components/button/index'
 import Title from '../../components/title/index'
 import { useNavigate } from "react-router-dom";
 import Lixo from "../../assets/Lixo.svg.svg"
-import pedido from "../CreatePedido/index"
+import Pedido from "../CreatePedido/index"
+import Cliente from "../CreatePedido/index"
 
 
 function AppView(){
@@ -17,11 +18,11 @@ function AppView(){
 return(
     <Background>
         <img src={ImgPedido}/>
-        <Title> {pedido} </Title>
+        <Title>Pedido</Title>
         <DivPedido>
             <ul>
-<p id="Pedido"> 'Pedido'</p>
-<p  id="Cliente"> 'Cliente'</p>
+<p id="Pedido"> {Pedido}</p>
+<p  id="Cliente"> {Cliente}</p>
             </ul>
 <img id= "Trash" src={Lixo}/>
         </DivPedido>
