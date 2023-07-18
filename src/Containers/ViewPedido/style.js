@@ -24,8 +24,8 @@ export const Label = styled.label`
 export const Lista = styled.li`
   display: flex;
   margin: 10px auto;
-  width: 270px;
-  height: 70px;
+  width: 340px;
+  height: 90px;
   box-shadow: 0px 4px 4px 0px;
   background: #a9a9a9;
   justify-content: space-between;
@@ -36,6 +36,15 @@ export const Lista = styled.li`
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+  }
+  #Pedido {
+    font-weight: 20px;
+    font-size: 19px;
+  }
+  #Cliente {
+    font-weight: 40px;
+    font-size: 22px;
+    color: #333333;
   }
   #Trash {
     width: 26px;

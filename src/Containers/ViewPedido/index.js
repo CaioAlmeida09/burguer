@@ -24,10 +24,11 @@ function AppView() {
     RecuperatePedidos();
   }, []);
 
-  async function DeleteUser() {
-    const responseDelete = await axios.delete(
-      `http://localhost:3001/delete/${responseDelete.data.id}`
-    );
+  async function DeleteUser(pedidoID) {
+    await axios.delete(`http://localhost:3001/delete/${pedidoID}`);
+    const NewPedidos = pedidos.filter((pedido) => pedido.id !== pedidoID);
+    setPedidos(NewPedidos);
+    console.log(pedidoID);
   }
 
   return (
@@ -42,7 +43,7 @@ function AppView() {
                 <p id="Pedido">{pedido.mypedido}</p>
                 <p id="Cliente">{pedido.name}</p>
               </div>
-              <button onClick={DeleteUser}>
+              <button onClick={() => DeleteUser(pedido.id)}>
                 <img id="Trash" src={Lixo} alt="lixo" />
               </button>
             </Lista>

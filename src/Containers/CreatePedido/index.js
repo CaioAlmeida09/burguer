@@ -35,11 +35,11 @@ function AppHome() {
       <Input ref={InputPedido} />
       <Label> Nome do cliente:</Label>
       <Input ref={InputCliente} />
-      <Button onClick={AddPedido}> cadastrar </Button>
-      <ButtonPedido ButtonCreate={true} onClick={RouterView}>
+      <Button ButtonCreate={true} onClick={AddPedido}>
         {" "}
-        Pedidos{" "}
-      </ButtonPedido>
+        cadastrar{" "}
+      </Button>
+      <ButtonPedido onClick={RouterView}>Pedidos</ButtonPedido>
     </Background>
   );
 }
