@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import MyRoutes from "./routes";
-import globalStyles from './globalStyles'
+import GlobalStyles from "./GlobalStyles";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <> <MyRoutes /> <globalStyles/></> 
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <MyRoutes /> <GlobalStyles />
+  </>
 );
