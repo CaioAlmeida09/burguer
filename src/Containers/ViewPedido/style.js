@@ -43,7 +43,7 @@ export const Lista = styled.li`
   }
   #Cliente {
     font-weight: 40px;
-    font-size: 22px;
+    font-size: 21px;
     color: #333333;
   }
   #Trash {

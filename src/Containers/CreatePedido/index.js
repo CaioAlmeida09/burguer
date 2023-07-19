@@ -36,8 +36,7 @@ function AppHome() {
       <Label> Nome do cliente:</Label>
       <Input ref={InputCliente} />
       <Button ButtonCreate={true} onClick={AddPedido}>
-        {" "}
-        cadastrar{" "}
+        cadastrar
       </Button>
       <ButtonPedido onClick={RouterView}>Pedidos</ButtonPedido>
     </Background>
