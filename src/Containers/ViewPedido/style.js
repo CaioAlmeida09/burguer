@@ -38,13 +38,14 @@ export const Lista = styled.li`
     text-align: center;
   }
   #Pedido {
-    font-weight: 20px;
-    font-size: 19px;
+    font-weight: 300px;
+    font-size: 18px;
+    color: #ffffff;
   }
   #Cliente {
-    font-weight: 40px;
-    font-size: 21px;
-    color: #333333;
+    font-weight: 700px;
+    font-size: 20px;
+    color: #ffffff;
   }
   #Trash {
     width: 26px;
