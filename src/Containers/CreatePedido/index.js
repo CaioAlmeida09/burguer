@@ -38,7 +38,7 @@ function AppHome() {
       <Button ButtonCreate={true} onClick={AddPedido}>
         cadastrar
       </Button>
-      <ButtonPedido onClick={RouterView}>Pedidos</ButtonPedido>
+      <ButtonPedido onTouchStart={RouterView}>Pedidos</ButtonPedido>
     </Background>
   );
 }

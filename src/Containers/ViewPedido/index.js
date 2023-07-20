@@ -43,7 +43,7 @@ function AppView() {
                 <p id="Pedido">{pedido.mypedido}</p>
                 <p id="Cliente">{pedido.name}</p>
               </div>
-              <button onTouchStart={() => DeleteUser(pedido.id)}>
+              <button onClick={() => DeleteUser(pedido.id)}>
                 <img id="Trash" src={Lixo} alt="lixo" />
               </button>
             </Lista>
