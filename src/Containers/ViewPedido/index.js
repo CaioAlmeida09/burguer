@@ -35,6 +35,7 @@ function AppView() {
     <Background>
       <img src={ImgPedido} alt="imagem-pedido" />
       <Title>Pedido</Title>
+
       <ul>
         {pedidos.map((pedido) => {
           return (
