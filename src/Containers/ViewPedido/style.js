@@ -17,6 +17,13 @@ export const Background = styled.div`
     width: 242px;
     height: 254px;
   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 305px;
+    overflow-y: auto;
+  }
 `;
 export const Label = styled.label`
   font-size: 10px;
@@ -53,4 +60,9 @@ export const Lista = styled.li`
     margin-top: 7%;
     cursor: pointer;
   }
+`;
+export const DivTeste = styled.div`
+  width: 100px;
+  height: 50px;
+  background: #333333;
 `;

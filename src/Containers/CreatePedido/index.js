@@ -35,7 +35,7 @@ function AppHome() {
       <Input ref={InputPedido} />
       <Label> Nome do cliente:</Label>
       <Input ref={InputCliente} />
-      <Button ButtonCreate={true} onTouchStart={AddPedido}>
+      <Button ButtonCreate={true} onClick={AddPedido}>
         cadastrar
       </Button>
       <ButtonPedido onClick={RouterView}>Pedidos</ButtonPedido>

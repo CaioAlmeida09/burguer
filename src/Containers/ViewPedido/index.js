@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Lista } from "../ViewPedido/style";
+import { Background, Lista, DivTeste } from "../ViewPedido/style";
 import ImgPedido from "../../assets/img-saco.png";
 import Button from "../../components/button/index";
 import Title from "../../components/title/index";
@@ -37,19 +37,25 @@ function AppView() {
       <Title>Pedido</Title>
 
       <ul>
-        {pedidos.map((pedido) => {
-          return (
-            <Lista key={pedido.id}>
-              <div id="paragrafos">
-                <p id="Pedido">{pedido.mypedido}</p>
-                <p id="Cliente">{pedido.name}</p>
-              </div>
-              <button onClick={() => DeleteUser(pedido.id)}>
-                <img id="Trash" src={Lixo} alt="lixo" />
-              </button>
-            </Lista>
-          );
-        })}
+        {pedidos.length === 0 ? (
+          <DivTeste>
+            <p> Ainda não temos pedido</p>
+          </DivTeste>
+        ) : (
+          pedidos.map((pedido) => {
+            return (
+              <Lista key={pedido.id}>
+                <div id="paragrafos">
+                  <p id="Pedido">{pedido.mypedido}</p>
+                  <p id="Cliente">{pedido.name}</p>
+                </div>
+                <button onClick={() => DeleteUser(pedido.id)}>
+                  <img id="Trash" src={Lixo} alt="lixo" />
+                </button>
+              </Lista>
+            );
+          })
+        )}
       </ul>
       <Button onClick={BackCreate}> voltar </Button>
     </Background>
