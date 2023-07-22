@@ -39,7 +39,7 @@ function AppView() {
       <ul>
         {pedidos.length === 0 ? (
           <DivTeste>
-            <p> Ainda não temos pedido</p>
+            <p> Ainda não temos pedido </p>
           </DivTeste>
         ) : (
           pedidos.map((pedido) => {
