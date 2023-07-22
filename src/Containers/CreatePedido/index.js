@@ -32,9 +32,9 @@ function AppHome() {
       <img src={ImgBurguer} alt=""></img>
       <Title>Faça seu Pedido</Title>
       <Label> Pedido: </Label>
-      <Input ref={InputPedido} />
+      <Input ref={InputPedido} placeholder="Ex: 1 hamburguer, 1 batata" />
       <Label> Nome do cliente:</Label>
-      <Input ref={InputCliente} />
+      <Input ref={InputCliente} placeholder="Digite seu nome" />
       <Button ButtonCreate={true} onClick={AddPedido}>
         cadastrar
       </Button>

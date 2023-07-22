@@ -62,7 +62,15 @@ export const Lista = styled.li`
   }
 `;
 export const DivTeste = styled.div`
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  height: 80px;
   background: #333333;
+  display: flex;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 17px auto;
+  border-radius: 10px;
 `;
