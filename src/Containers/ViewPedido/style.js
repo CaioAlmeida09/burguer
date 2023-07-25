@@ -14,7 +14,7 @@ export const Background = styled.div`
     margin: 20px auto;
   }
   img {
-    width: 242px;
+    width: 241px;
     height: 254px;
   }
   ul {
