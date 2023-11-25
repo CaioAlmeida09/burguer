@@ -19,7 +19,9 @@ function AppView() {
   useEffect(() => {
     async function RecuperatePedidos() {
       const response = await axios.get("http://localhost:3001/pedidos");
-      setPedidos(response.data);
+      const teste = localStorage.getItem("@burguer");
+      setPedidos(teste);
+      console.log(response);
     }
     RecuperatePedidos();
   }, []);

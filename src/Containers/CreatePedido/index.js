@@ -19,6 +19,7 @@ function AppHome() {
       name: InputCliente.current.value,
       mypedido: InputPedido.current.value,
     });
+    localStorage.setItem("@burguer", newPedido);
     Swal.fire("Pedido realizado", "bom trabalho");
     setPedidos([...pedidos, newPedido.data]);
   }
